@@ -136,14 +136,21 @@ main {
 
   .features-grid {
     flex-direction: column; /* stack vertically on phones */
-    gap: 20px;
+    gap: 10px; /* reduced gap between column blocks */
   }
 
   .features-grid ul {
     font-size: 16px;
-    min-width: unset; /* let it shrink freely */
+    margin: 0; /* remove any default vertical spacing */
+    padding: 0 0 0 20px; /* keep left padding for bullets */
+    min-width: unset;
+  }
+
+  .features-grid li {
+    margin-bottom: 8px; /* reduce space between list items */
   }
 }
+
 
 
 
@@ -265,5 +272,6 @@ main {
   border-radius: 4px;
   margin-bottom: 10px;
 }
+
 
 
