@@ -1,0 +1,79 @@
+/* Reset & Base Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #444;
+  padding: 15px 0;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+}
+
+.navbar a:hover {
+  background-color: #666;
+  border-radius: 4px;
+}
+
+/* Main Layout */
+.homepage-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;      /* ⬅️ Align content to the top */
+  justify-content: space-between;
+  padding: 20px 10%;            /* ⬅️ Reduce vertical padding */
+  gap: 40px;
+}
+
+/* Left: Text Section */
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Right: Image Section */
+.intro-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

@@ -7,36 +7,86 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Courses I Offer</h1>
+<!-- Navigation Bar -->
+<header>
+    <h1>Courses I Teach</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="courses.html">Courses</a>
+     <a href="index.html">Home</a>
+      <a href="courses.html">Tutoring</a>
+      <a href="artwork.html">Artwork</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="courses-container">
-      <div class="course-column left-column">
-        <h2>Tuition available</h2>
-        <ul>
-          <li>O-Level Computer Science (CAIE 2210)</li>
-          <li>A-Level Computer Science (CAIE 9618)</li>
-        </ul>
-      </div>
+  
 
-      <div class="course-column right-column">
-        <h2>Short courses available</h2>
-        <ul>
-          <li>Python Programming</li>
-          <li>C++ Programming</li>
-          <li>Web Development Basics</li>
-        </ul>
+
+
+  <main> 
+   <section class="hero">
+      <h2>Online and In person Tuition for A & O Level Computer Science</h2>
+      <p>Learn from an experienced lecturer with a passion for teaching programming and computer science concepts.</p>
+      <section class="tuition-section">
+      <div class="features-grid">
+      <ul>
+      <li>Engaging, hands-on sessions using computer to build real skills</li>
+      <li>Exam focused notes and past paper solutions included for effective revision</li>
+      </ul>
+      <ul>
+      <li>Fee starting from Rs.6000</li>
+      <li>Flexible Timings</li>
+      </ul>
       </div>
+      </section>
+      <br>
+      <a href="contact.html" class="btn">Book a Free Trial</a>
     </section>
+
+   
+
+      <!-- Short Courses Section -->
+<section class="short-courses-section">
+  <h2>Short Courses Available</h2>
+
+  <div class="short-courses-grid">
+    <!-- Python Course -->
+    <div class="short-course">
+      <img src="images/python.jpg" alt="Python Programming">
+      <h3>Python Programming</h3>
+      <p>Learn the basics of Python including variables, loops, functions, and data structures. <br>Duration: 4 weeks</p>
+      <button onclick="window.location.href='mailto:youremail@example.com?subject=Register for Python Programming'">Register Now</button>
+    </div>
+
+    <!-- C++ Course -->
+    <div class="short-course">
+      <img src="images/c++.jpg" alt="C++ Programming">
+      <h3>C++ Programming </h3><span class="blinking">(Starting Soon)</span>
+      <p>Dive into object-oriented programming, memory management, and data structures using C++. <br>Duration: 6 weeks</p>
+      <button onclick="window.location.href='mailto:youremail@example.com?subject=Register for C++ Programming'">Register Now</button>
+    </div>
+
+    <!-- Arabic Grammer For Beginners -->
+    <div class="short-course">
+      <img src="images/arabic.jpg" alt="arabic grammer for beginners">
+      <h3>Arabic Grammer For Beginners</h3>
+      <p>Learn Arabic to understand Quran, which is the resposibility of every muslim </p>
+      <button onclick="window.location.href='mailto:youremail@example.com?subject=Register for Web Development Basics'">Register For Free</button>
+    </div>
+
+    <!-- Example: Add more courses to test the wrapping -->
+    <!--
+    <div class="short-course">
+      <img src="images/extra.jpg" alt="Extra Course">
+      <h3>Extra Course</h3>
+      <p>This is a test course to demonstrate how the grid wraps after 3 items per row.</p>
+      <button>Register Now</button>
+    </div>
+    -->
+  </div>
+</section>
+
   </main>
+
 
   <footer>
     <p>© 2025 Sobia Obaid</p>
