@@ -93,20 +93,23 @@ main {
  padding: 10px 10px;
 }
 
+
 .tuition-section {
-  background-color: #e0f7fa; /* Soft aqua blue background */
+  background-color: #e0f7fa;
   color: #2c3e50;
-   padding: 10px 10px;
-  margin: 0 80px; /* space from left and right of page */
+  padding: 20px; /* handles spacing inside the box */
+  margin: 20px auto; /* centers the section and adds vertical space */
   font-family: 'Poppins', sans-serif;
+  max-width: 900px; /* prevents it from stretching too wide on large screens */
+  box-sizing: border-box; /* prevents padding from increasing width */
+  border-radius: 8px; /* optional */
 }
 
 .features-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 60px;
   flex-wrap: wrap;
- 
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .features-grid ul {
@@ -117,13 +120,31 @@ main {
   line-height: 1.6;
   color: #00796b; /* Teal color - engaging but professional */
   padding-left: 20px;
-  flex: 1;
+ flex: 1 1 300px; /* shrink and wrap properly */
   min-width: 250px;
+  box-sizing: border-box;
 }
 
 .features-grid li {
   /* No hover effect */
 }
+@media (max-width: 600px) {
+  .tuition-section {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .features-grid {
+    flex-direction: column; /* stack vertically on phones */
+    gap: 20px;
+  }
+
+  .features-grid ul {
+    font-size: 16px;
+    min-width: unset; /* let it shrink freely */
+  }
+}
+
 
 
 /* Short Courses Container - Flex Grid */
@@ -244,4 +265,5 @@ main {
   border-radius: 4px;
   margin-bottom: 10px;
 }
+
 
