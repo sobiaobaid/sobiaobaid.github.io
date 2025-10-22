@@ -1,30 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  
-   <!-- Navigation Bar -->
-  <header class="navbar">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="tutoring.html">Tutoring</a>
-      <a href="artwork.html">Artwork</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
+<!-- Font Awesome (include in <head> if not already) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  
+<!-- Contact Icons with Text -->
+<div class="contact-icons" style="text-align: center; margin-top: 30px; font-size: 18px;">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/923032604259?text=Hi%20Teacher%2C%20I%20am%20interested%20in%20your%20CS%20tuition%20classes." target="_blank" title="Contact on WhatsApp"
+     style="margin: 10px 20px; color: #000; text-decoration: none; display: inline-block;">
+    <i class="fab fa-whatsapp" style="font-size: 24px; vertical-align: middle; margin-right: 8px;"></i>
+    <span style="vertical-align: middle;">Contact on WhatsApp</span>
+  </a>
 
-  <main>
-    <section>
-      <h2 style="text-align: center;">Send me a Message</h2>
+  <!-- Email -->
+  <a href="mailto:ssobiaobaid@gmail.com" title="Send Email"
+     style="margin: 10px 20px; color: #000; text-decoration: none; display: inline-block;">
+    <i class="fas fa-envelope" style="font-size: 24px; vertical-align: middle; margin-right: 8px;"></i>
+    <span style="vertical-align: middle;">Email Us</span>
+  </a>
+</div>
+
+<!-- Horizontal Line -->
+<hr style="margin: 30px auto; width: 80%; border: 0; border-top: 1px solid #ddd;">
+
+<!-- Introductory Text -->
+<p style="text-align: center; font-size: 16px; color: #555; max-width: 600px; margin: 0 auto 30px;">
+  Please fill out the form below to send me a message, and I will get back to you as soon as possible.
+</p>
+
+<!-- Your form goes here -->
+
       <div class="contact-form">
   <form action="https://formsubmit.co/ssobiaobaid@gmail.com" method="POST">
     <label>Your Name:</label><br>
@@ -32,42 +35,26 @@
 
     <label>Your Email:</label><br>
     <input type="email" name="email" required><br>
+   
+<label>Your Contact No:</label><br>
+    <input type="tel" name="contact" pattern="[0-9]{10}" required><br>
+
 
     <label>Interested in:</label><br>
       <select name="course" required>
           <option value="" disabled selected>Select a course</option>
           <option value="Python Programming">Python Programming</option>
           <option value="C++ Programming">C++ Programming</option>
-          <option value="Arabic grammer">Arabic Grammer</option>
+          <option value="Web Development Basics">Arabic Grammer</option>
           <option value="O-Level Computer Science">O-Level Computer Science </option>
           <option value="A-Level Computer Science">A-Level Computer Science </option>
        </select><br>
      <label>Your Message:</label><br>
-    <textarea name="message" required></textarea><br>
+    <textarea name="message" ></textarea><br>
 
     <button type="submit">Send</button>
   </form>
 </div>
       
-     <div class="whatsapp-button">
-       <a href="https://wa.me/923032604259?text=Hi%20Teacher%2C%20I%20am%20interested%20in%20your%20CS%20tuition%20classes." target="_blank">
-    <button type="button">
-      <i class="fab fa-whatsapp"></i> Contact on WhatsApp
-    </button>
-  </a>
-</div>
-
-
- 
+      
     </section>
-
-  </main>
-
-  <footer>
-    <p>© 2025 Sobia Obaid</p>
-  </footer>
-</body>
-</html>
-
-
-
